@@ -72,34 +72,6 @@ section.background-section p {
     margin-bottom: 15px;
 }
 
-ul.website-links {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 15px;
-}
-
-ul.website-links li {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-ul.website-links li:hover {
-    transform: scale(1.05); 
-}
-
-ul.website-links li a {
-    text-decoration: none;
-    color: #174e39;
-    font-size: 18px;
-}
-
 footer {
     background-color: rgba(255, 255, 255, 0.4);
     font-family: "Roboto Mono", monospace;
