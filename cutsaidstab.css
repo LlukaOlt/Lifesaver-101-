@@ -101,15 +101,24 @@ ul.website-links li a {
 }
 
 footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
     text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
+    padding: 10px 0;
+    color: #174e39;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
 }
 
-footer p {
-    margin: 0;
-    font-size: 16px;
-    color: #174e39;
+
+footer a {
+    color: #448C72;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #78d6ca;
 }

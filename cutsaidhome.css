@@ -11,3 +11,135 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px 50px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#logo {
+    height: 175px;
+    width: auto;
+}
+
+
+nav {
+    display: flex; 
+    gap: 20px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #448C72;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+nav a:hover {
+    color: #78d6ca;
+    transform: scale(1.1); 
+}
+
+
+.background-section {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    color: #174e39;
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 900px; 
+}
+
+.background-section p {
+    padding: 20px;
+    flex: 2; 
+}
+
+.background-section img {
+    height: 250px;
+    width: auto;
+    flex: 1; 
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+website-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 20px auto;
+}
+
+
+.website-links li {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.449), rgba(121, 170, 147, 0.384));
+    border-radius: 15px; 
+    padding: 15px 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.21);
+    transition: transform 0.3s ease; 
+    list-style: none; 
+    text-align: center; 
+    width: 400px; 
+    justify-content: center;
+    margin-left: 180px;
+}
+
+
+.website-links li:hover {
+    background-color: rgba(74, 131, 96, 0.844);
+    transform: scale(1.1); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0); 
+    transition: transform 0.3s ease;
+}
+
+
+.website-links a {
+    text-decoration: none; 
+    color: #174e39; 
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease; 
+}
+
+
+.website-links a:hover {
+    color: white;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    color: #174e39;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+
+footer a {
+    color: #448C72;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #78d6ca;
+}

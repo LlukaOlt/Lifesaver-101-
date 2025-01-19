@@ -2,11 +2,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>FAQs</title>
-        <link rel="stylesheet" href="cutsaidhome.css">
+        <title>Bleeding and Cuts - FAQs</title>
+        <link rel="stylesheet" href="faq.css">
     </head>
     <body>
         <header>
+            <img id="logo" src="images/logo.png" alt="Lifesaver101 Logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -15,30 +16,61 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <h1>Frequently Asked Questions</h1>
-            <div>
-                <h2>What should I do if I get a minor cut?</h2>
-                <p>First, wash your hands to prevent infection. Then, gently clean the wound with water and mild soap. Apply an antiseptic and cover it with a sterile bandage.</p>
-            </div>
-            <div>
-                <h2>How do I stop bleeding from a cut?</h2>
-                <p>Apply firm pressure to the cut using a clean cloth or bandage. Keep the area elevated if possible. Most minor cuts stop bleeding within a few minutes.</p>
-            </div>
-            <div>
-                <h2>When should I see a doctor for a cut?</h2>
-                <p>If the cut is deep, won't stop bleeding after 10 minutes of pressure, or shows signs of infection (redness, swelling, or pus), seek medical attention immediately.</p>
-            </div>
-            <div>
-                <h2>What can I use to clean a cut?</h2>
-                <p>Use clean water to rinse the wound. Avoid using hydrogen peroxide or iodine directly on the wound as they can damage tissue. Mild soap is safe for cleaning around the area.</p>
-            </div>
-            <div>
-                <h2>How do I know if my cut is infected?</h2>
-                <p>Signs of infection include increased pain, redness, warmth, swelling, pus, or a fever. If you notice these symptoms, consult a healthcare professional promptly.</p>
-            </div>
-        </section>
-    <footer>
-        <p>&copy; 2025 Lifesaver101. All rights reseeerved. | <a href="contact.html">Contact Us</a></p>
-    </footer>
-</html>
+        <main>
+            <section class="faq-section">
+                <article class="faq-item">
+                    <h2 class="faq-question">What should I do if I get a minor cut?</h2>
+                    <p class="faq-answer">First, wash your hands to prevent infection. Then, gently clean the wound with water and mild soap. Apply an antiseptic and cover it with a sterile bandage.</p>
+                </article>
+        
+                <article class="faq-item">
+                    <h2 class="faq-question">How do I stop bleeding from a cut?</h2>
+                    <p class="faq-answer">Apply firm pressure to the cut using a clean cloth or bandage. Keep the area elevated if possible. Most minor cuts stop bleeding within a few minutes.</p>
+                </article>
+
+                <article class="faq-item">
+                    <h2 class="faq-question">When should I see a doctor for a cut?</h2>
+                    <ul class="faq-answer">
+                        <li>If the cut is deep or won't stop bleeding after 10 minutes of applying pressure.</li>
+                        <li>If the cut shows signs of infection such as redness, swelling, or pus.</li>
+                        <li>If the cut was caused by a dirty object, like a rusty nail, and there is a risk of tetanus.</li>
+                    </ul>
+                </article>
+        
+                <article class="faq-item">
+                    <h2 class="faq-question">How can I prevent infection in a cut?</h2>
+                    <p class="faq-answer">Keep the cut clean and dry, and change the bandage regularly. Avoid touching the wound with dirty hands and apply antiseptic when necessary.</p>
+                </article>
+        
+                <article class="faq-item">
+                    <h2 class="faq-question">How do I know if my cut is infected?</h2>
+                    <p class="faq-answer">Signs of infection include increased pain, redness, warmth, swelling, pus, or a fever. If you notice these symptoms, consult a healthcare professional promptly.</p>
+                </article>
+            </section>
+        
+            <img src="walkingfigure.png" alt="FAQ illustration" class="walking-figure">
+        
+            <nav>
+                <ul class="website-links">
+                    <li><a href="cutsaidhome.html">Bleeding Aid Home Page</a></li>
+                    <li><a href="cutsaidintro.html">Introduction Bleeding Aid</a></li>
+                    <li><a href="cutsaidsteps.html">Steps to Stop Bleeding</a></li>
+                    <li><a href="cutsaidFAQ.html">Frequently Asked Questions</a></li>
+                    <li><a href="cutsaidstab.html">Getting Stabbed</a></li>
+                </ul>
+            </nav>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Lifesaver101. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+        </footer>
+        
+        <script>
+            document.querySelectorAll('.faq-item').forEach((item) => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        </script>
+    </body>
+    </html>
