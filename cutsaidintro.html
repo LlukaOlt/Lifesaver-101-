@@ -1,4 +1,3 @@
-<!-- Author: Orges Sylejmani -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,15 +23,32 @@
             <p>Bleeding serves an essential role in the body’s healing process. It helps flush out debris and pathogens from the wound, while platelets and clotting factors work to stop the bleeding and form a protective scab.</p>
 
             <h2>Types of Bleeding</h2>
-            <ul class="website-links" id="bleeding-text">
-                <li class="bleeding-pic"><strong>Arterial Bleeding:</strong> Bright red blood that spurts with the heartbeat. This type of bleeding is severe and requires immediate medical attention.</li>
-                <li class="bleeding-pic"><strong>Venous Bleeding:</strong> Dark red blood that flows steadily. It can be serious but is usually easier to control than arterial bleeding.</li>
-                <li class="bleeding-pic"><strong>Capillary Bleeding:</strong> Slow, oozing blood from small vessels. This is the most common and typically the least severe type of bleeding.</li>
+            <ul class="website-links open-pic">
+                <li>
+                    <strong>Arterial Bleeding:</strong>
+                    <div class="hidden-content">
+                        <p>Bright red blood that spurts with the heartbeat. This type of bleeding is severe and requires immediate medical attention.</p>
+                        <img src="images/arterial.jpg" alt="Arterial Bleeding">
+                    </div>
+                </li>
+                <li>
+                    <strong>Venous Bleeding:</strong>
+                    <div class="hidden-content">
+                        <p>Dark red blood that flows steadily. It can be serious but is usually easier to control than arterial bleeding.</p>
+                        <img src="images/venous.jpg" alt="Venous Bleeding">
+                    </div>
+                </li>
+                <li>
+                    <strong>Capillary Bleeding:</strong>
+                    <div class="hidden-content">
+                        <p>Slow, oozing blood from small vessels. This is the most common and typically the least severe type of bleeding.</p>
+                        <img src="images/capillary.jpg" alt="Capillary Bleeding">
+                    </div>
+                </li>
             </ul>
 
             <h2>Understanding the Risks</h2>
             <p>While most cuts and bleeding are minor and heal without complications, severe bleeding or improper wound care can lead to infections or other complications. It is essential to understand the basics of wound management and when to seek medical assistance.</p>
-            <img src="" alt="CPR ">
         </section>
 
         <ul class="website-links">
@@ -46,5 +62,13 @@
         <footer>
             <p>&copy; 2025 Lifesaver101. All rights reserved. | <a href="contact.html">Contact Us</a></p>
         </footer>
+
+        <script>
+            document.querySelectorAll('.open-pic li').forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        </script>
     </body>
 </html>
