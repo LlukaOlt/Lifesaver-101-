@@ -45,7 +45,6 @@ nav a:hover {
     transform: scale(1.1); 
 }
 
-
 .background-section {
     display: flex; 
     justify-content: space-between; 
@@ -70,16 +69,14 @@ nav a:hover {
     flex: 1; 
 }
 
-
 ul {
     list-style-type: none;
 }
 
-
 .website-links {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 15px;
     padding: 0;
     margin: 20px auto;
@@ -101,6 +98,10 @@ ul {
     text-decoration: none;
     color: #174e39;
     font-size: 18px;
+}
+
+#current-link{
+    display: none;
 }
 
 .faq-section {

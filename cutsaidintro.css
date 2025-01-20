@@ -81,10 +81,11 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-#arterial-bleeding {
-    background-image: src = "";
+.bleeding-pic {
+    background-image: url("images/venous-background.png");
     background-size: cover;
     background-position: center;
+    opacity: 0.4;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -92,30 +93,8 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#venous-bleeding {
-    background-image: ssrc = "";
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    color: #174e39;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#capillary-bleeding {
-    background-image: src = "";
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    color: #174e39;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.causes-bleeding {
-
+#bleeding-text li{
+    opacity: 1;
 }
 
 .website-links {
@@ -144,6 +123,10 @@ nav a:hover {
     text-decoration: none;
     color: #174e39;
     font-size: 18px;
+}
+
+#current-link{
+    display: none;
 }
 
 footer {
