@@ -1,0 +1,122 @@
+body {
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header img {
+    margin-top: 50px;
+    height: 250px;
+    width: auto;
+}
+
+.search-section {
+    margin-top: 100px;
+    color: #174e39;
+}
+
+.search-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.449), rgba(121, 170, 147, 0.384));
+    color: rgb(44, 121, 91);
+    padding: 10px 20px;
+    width: 700px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dropdown-button:hover {
+    background-color: #90e6cc;
+    transform: scale(1.05);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 700px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    justify-content: center;
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-button::after {
+    font-family: "Roboto Mono", monospace;
+    content: "CPR...";
+    animation: textChange 3s infinite alternate;
+    transition: 3s;
+    display: block;
+    font-size: 20px;
+    color: #28684d;
+}
+
+.dropdown-content a {
+    color: #174e39;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+@keyframes textChange {
+    0% {
+        content: "Allergy...";
+    }
+    50% {
+        content: "Drowning...";
+    }
+    75% {
+        content: "CPR...";
+    }
+    100% {
+        content: "Bleeding...";
+    }
+}
+
+footer {
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    color: #174e39;
+}
+
+
+footer a {
+    color: #448C72;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

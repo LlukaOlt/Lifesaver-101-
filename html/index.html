@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lifesaver 101</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="images/logo.png" alt="Lifesaver101 Logo">
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h1>What is your current concern?</h1>
+            <div class="dropdown">
+                <button onclick="toggleDropdown()" class="dropdown-button"></button>
+                <div id="dropdown-menu" class="dropdown-content">
+                    <a href="cpr.html">CPR Techniques</a>
+                    <a href="AllergicReactions.html">Allergy Help</a>
+                    <a href="cutsaidhome.html">Bleeding Treatment</a>
+                    <a href="DrowningHomePage.html">Drowning</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lifesaver101. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.getElementById('dropdown-menu').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

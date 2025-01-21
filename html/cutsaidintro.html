@@ -1,0 +1,75 @@
+<!-- Author: Orges Sylejmani -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro To Bleeding</title>
+        <link rel="stylesheet" href="cutsaidintro.css">
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="images/logo.png" alt="Lifesaver101 Logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="references.html">References</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="background-section">
+            <h1>Introduction to Bleeding and Cuts</h1>
+            <p>Bleeding occurs when blood vessels are damaged, allowing blood to escape from the circulatory system. It is a natural response of the body to injury and can range from minor cuts to serious wounds.</p>
+
+            <h2>Why Do We Bleed?</h2>
+            <p>Bleeding serves an essential role in the body’s healing process. It helps flush out debris and pathogens from the wound, while platelets and clotting factors work to stop the bleeding and form a protective scab.</p>
+
+            <h2>Types of Bleeding</h2>
+            <ul class="website-links open-pic">
+                <li>
+                    <strong>Arterial Bleeding:</strong>
+                    <div class="hidden-content">
+                        <p>Bright red blood that spurts with the heartbeat. This type of bleeding is severe and requires immediate medical attention.</p>
+                        <img class="image-display" src="images/arterial.PNG" alt="Arterial Bleeding">
+                    </div>
+                </li>
+                <li>
+                    <strong>Venous Bleeding:</strong>
+                    <div class="hidden-content">
+                        <p>Dark red blood that flows steadily. It can be serious but is usually easier to control than arterial bleeding.</p>
+                        <img class="image-display" src="images/venousR.PNG" alt="Venous Bleeding">
+                    </div>
+                </li>
+                <li>
+                    <strong>Capillary Bleeding:</strong>
+                    <div class="hidden-content">
+                        <p>Slow, oozing blood from small vessels. This is the most common and typically the least severe type of bleeding.</p>
+                        <img class="image-display" src="images/capillary.PNG" alt="Capillary Bleeding">
+                    </div>
+                </li>
+            </ul>
+
+            <h2>Understanding the Risks</h2>
+            <p>While most cuts and bleeding are minor and heal without complications, severe bleeding or improper wound care can lead to infections or other complications. It is essential to understand the basics of wound management and when to seek medical assistance.</p>
+        </section>
+
+        <ul class="website-links">
+            <li><a href="cutsaidhome.html">Bleeding Aid Home Page</a></li>
+            <li id="current-link"><a href="cutsaidintro.html">Introduction Bleeding Aid</a></li>
+            <li><a href="cutsaidsteps.html">Steps to Stop Bleeding</a></li>
+            <li><a href="cutsaidFAQ.html">Frequently Asked Questions</a></li>
+            <li><a href="cutsaidstab.html">Getting Stabbed</a></li>
+        </ul>
+
+        <footer>
+            <p>&copy; 2025 Lifesaver101. All rights reserved. | <a href="contact.html">Contact Us</a></p>
+        </footer>
+
+        <script>
+            document.querySelectorAll('.open-pic li').forEach(item => {
+                item.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        </script>
+    </body>
+</html>
