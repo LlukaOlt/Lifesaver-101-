@@ -94,8 +94,11 @@ header img {
     50% {
         content: "Drowning...";
     }
+    75% {
+        content: "CPR...";
+    }
     100% {
-        content: "Bleeding....";
+        content: "Bleeding...";
     }
 }
 
