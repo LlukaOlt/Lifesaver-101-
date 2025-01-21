@@ -1,19 +1,32 @@
 body {
-    background-image: url('images/background.png'); 
-    background-size: cover; 
+    background-image: url('images/background.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-position: center;
     font-family: "Roboto Mono", monospace;
-    font-optical-sizing: auto;
     font-weight: 400;
-    font-style: normal;
+    color: #174e39;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
-    display: flex; 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
     gap: 20px;
 }
 
@@ -21,12 +34,48 @@ nav a {
     font-size: 20px;
     text-decoration: none;
     color: #448C72;
-    transition: color 0.3s ease, transform 0.3s ease; 
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
     color: #78d6ca;
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main ol {
+    list-style: decimal inside;
+    margin: 20px 0;
+    padding: 0;
+}
+
+main ol li {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+main ol li img {
+    max-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main ol li p {
+    flex: 1;
 }
 
 .website-links {
@@ -52,6 +101,7 @@ nav a:hover {
 }
 
 .website-links a {
+    background-color: none;
     text-decoration: none;
     color: #174e39;
     font-size: 18px;
