@@ -101,7 +101,7 @@ ul {
     color: #174e39;
     font-size: 18px;
 }
-/* FAQ Section Styling */
+
 .faq-section {
     max-width: 800px;
     margin: 50px auto;
@@ -113,14 +113,14 @@ ul {
 
 .faq-item {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: question & answer */
+    grid-template-columns: 1fr 1fr; 
     gap: 10px;
     padding: 15px 10px;
     border-bottom: 1px solid #ccc;
 }
 
 .faq-item:last-child {
-    border-bottom: none; /* Remove border for the last FAQ item */
+    border-bottom: none; 
 }
 
 .faq-question {
@@ -132,7 +132,7 @@ ul {
 .faq-answer {
     color: #333;
     text-align: right;
-    display: none; /* Hidden by default */
+    display: none; 
 }
 
 .faq-item:hover {
@@ -140,13 +140,13 @@ ul {
     cursor: pointer;
 }
 
-/* When the answer is visible */
+
 .faq-item.active .faq-answer {
     display: block;
     animation: fadeIn 0.3s ease-in;
 }
 
-/* Fade-in animation for answers */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -156,5 +156,29 @@ ul {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    color: #174e39;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+
+footer a {
+    color: #448C72;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #78d6ca;
 }
 

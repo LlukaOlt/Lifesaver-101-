@@ -102,3 +102,27 @@ ul {
     color: #174e39;
     font-size: 18px;
 }
+
+
+footer {
+    background-color: rgba(255, 255, 255, 0.4);
+    font-family: "Roboto Mono", monospace;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    color: #174e39;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px;
+}
+
+
+footer a {
+    color: #448C72;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #78d6ca;
+}
