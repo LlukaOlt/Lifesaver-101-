@@ -117,7 +117,7 @@ button {
     font-size: 0; 
     color: transparent; 
     background-color: rgb(209, 255, 116); 
-    background-image: url('megaphone1.svg'); 
+    background-image: url('../sound/megaphone1.svg'); 
     background-size: cover; 
     background-position: center;
     border: 2px solid black; 
@@ -131,7 +131,7 @@ button {
 button:hover {
     cursor: pointer;
     background-color: #01522c;
-    background-image: url('megaphone1.svg');
+    background-image: url('../sound/megaphone1.svg');
     transform: scale(1.1); 
 }
 .website-links li {
