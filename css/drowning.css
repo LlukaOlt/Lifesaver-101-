@@ -1,9 +1,37 @@
 .video-frame {
-    border: 4px solid #448C72; 
-    border-radius: 10px;
-    padding: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 4px solid #448C72;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
+
+.video-frame:hover {
+    transform: scale(1.05);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #448C72;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-top:hover {
+    background-color: #78d6ca;
+}
+
+
 
 ol li, ul li {
     margin-bottom: 15px; 
@@ -30,7 +58,7 @@ ol {
 
 body {
     margin: 0;
-    background: url('../images/background.png') no-repeat center center fixed;
+    background: url('background.png') no-repeat center center fixed;
     background-size: cover;
     font-family: "Roboto Mono", monospace;
     margin: 0;
@@ -112,7 +140,29 @@ ul {
     text-align: center; 
     padding: 0;
 }
-button {
+
+
+#scrollToTop {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;  
+    color: #174e39;   
+    background-color: #f0f0f0; 
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: opacity 0.2s, transform 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-top {
+    padding: 0;
+    border: none;  }
+
+
+#bpm {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 0; 
     color: transparent; 
@@ -128,7 +178,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#bpm:hover {
     cursor: pointer;
     background-color: #01522c;
     background-image: url('../sound/megaphone1.svg');
@@ -166,7 +216,7 @@ button:hover {
 .background-section p {
     padding: 20px;
     flex: 2; 
-}
+}   
 .background-section {
     display: flex; 
     justify-content: space-between; 
