@@ -45,6 +45,10 @@ nav a:hover {
     border-radius: 5px;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 main {
     margin: 20px auto;
     padding: 20px;
@@ -62,16 +66,16 @@ main ol {
 
 main ol li {
     margin-bottom: 20px;
-    font-size: 1.1rem;
+    font-size: 20px;
     display: flex;
     align-items: flex-start;
     gap: 15px;
 }
 
 main ol li img {
-    max-width: 150px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 180px;
+    border-radius: 6px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 1);
 }
 
 main ol li p {
