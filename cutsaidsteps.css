@@ -69,8 +69,8 @@ main ol li {
 }
 
 main ol li img {
-    max-width: 100px;
-    border-radius: 5px;
+    max-width: 150px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

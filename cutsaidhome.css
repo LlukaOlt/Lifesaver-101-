@@ -96,7 +96,6 @@ ul {
     transition: transform 0.3s ease;
 }
 
-
 .website-links a {
     text-decoration: none; 
     color: #174e39; 
@@ -105,9 +104,12 @@ ul {
     transition: color 0.3s ease; 
 }
 
-
 .website-links a:hover {
     color: white;
+}
+
+#current-link{
+    display: none;
 }
 
 footer {
