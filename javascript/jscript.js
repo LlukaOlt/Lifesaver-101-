@@ -1,6 +1,6 @@
 <!--Author: Konstantinos Dingelidis-->
 document.getElementById('bpm').addEventListener('click', function() {
-    const audio = new Audio('LlukaOlt/Lifeaver-101-updated/sound/100bpmMetronome.mp3'); 
+    const audio = new Audio('../sound/100bpmMetronome.mp3'); 
     audio.play();
 });
 
